@@ -8,7 +8,7 @@ function jugar()
     
 }
 
-function turnos(opcionM, opcionJ)
+function validarTurnos(opcionM, opcionJ)
 {
     var turns = [opcionM, opcionJ];
     switch(turns)
@@ -17,11 +17,31 @@ function turnos(opcionM, opcionJ)
             console.log("Empate")
             break;
         case [0] == 1 && [1] == 2: 
-        console.log("");
-        break;   
+            console.log("Ganaste");
+        break;
+        case [0] ==  1  && [1] == 3:
+            console.log("Perdiste");
+        break;
+        case [0] == 2 && [1] == 1:
+            console.log("Perdiste");
+        break;
+        case [0] == 2 && [1] == 3:
+            console.log("Ganaste");
+        break;
+        case [0] == 3 && [1] == 1:
+            console.log("Ganaste");
+        break;
+        case [0] == 3 && [1] == 2:
+            console.log("Perdiste");
+        break;
+        default: 
+            console.log("Escoge bien");
+        break;
     } 
 }
 function contarGanadas()
 {
-
+    var maquina;
+    var jugador;
+    validarTurnos(maquina, jugador);
 }
