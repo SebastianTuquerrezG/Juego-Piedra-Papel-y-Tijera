@@ -1,3 +1,8 @@
+/*Joan Sebastian Tuquerrez Gomez
+    Proyecto en JavaScript del curso de Platzi
+    22/05/2020
+*/
+
 function validarTurnos(opcionM, opcionJ)
 {
     var turns = [opcionM, opcionJ];
