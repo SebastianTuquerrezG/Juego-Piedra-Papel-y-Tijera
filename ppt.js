@@ -1,7 +1,3 @@
-var tijera = 1;
-var piedra = 2;
-var papel = 3;
-
 function validarTurnos(opcionM, opcionJ)
 {
     var turns = [opcionM, opcionJ];
@@ -63,3 +59,5 @@ function contarGanadas()
     console.log("Son tus rondas ganadas" + sum1);
     console.log("Son tus rondas ganadas" + sum2);
 }
+
+contarGanadas();
